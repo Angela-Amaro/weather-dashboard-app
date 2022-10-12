@@ -6,7 +6,7 @@ Hello and welcome to my weather dashboard. Input any city you want to see the cu
 
 ## Snapshot
 
-[Active website link](https://angela-amaro.github.io/password-generator/)
+[Active website link](https://angela-amaro.github.io/weather-dashboard-app/)
 
 ![Website gif](./weatherrecord.gif)
 
