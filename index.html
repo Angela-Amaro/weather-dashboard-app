@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Weather Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,42 +9,39 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
-
-
-
-
+<body class="w3-dark-grey w3-content" style="max-width:1600px">
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
   <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+  <header>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>Weather Dashboard</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
-      
     </div>
     </div>
   </header>
-  <input placeholder="type a city" class="w3-input w3-border"  required>
-  <button class="w3-button w3-teal w3-padding-large w3-hover-black">Search</button>
+  <!--search bar-->
+  <input id="input" placeholder="type a city" class="w3-input w3-border"  required>
+  <button id="fetchBtn" class="w3-button w3-teal w3-padding-large w3-hover-black">Search</button>
   <div class="w3-card-4">
+
+    <!--results-->
+
+    <!--current-->
     <div class="w3-display-container w3-text-white">
-      <img src="img_london.jpg" alt="Lights" style="width:100%">
-      <div id="cityname,date" class="w3-xlarge w3-display-bottomleft w3-padding">LONDON 60&deg; F</div>
+      <h2 id="citynamedate" class="w3-xlarge  w3-padding"></h2>
       <h2 id="maintemp"></h2>
       <h2 id="mainhumid"></h2>
       <h2 id="mainwind"></h2>
-
     </div>
+    <!--5day forecast-->
     <div class="w3-row">
       <div class="w3-third w3-center">
         <h3></h3>
         <h5 id="date0"></h5>
-        <img src="img_weather_sun.jpg" alt="weather icon">
         <h5 id="temp0"></h5>
       <h5 id="humid0"></h5>
       <h5 id="wind0"></h5>
@@ -52,7 +49,6 @@
       <div class="w3-third w3-center">
         <h3></h3>
         <h5 id="date1"></h5>
-        <img src="img_weather_cloud.jpg" alt="weather icon">
           <h5 id="temp1"></h5>
       <h5 id="humid1"></h5>
       <h5 id="wind1"></h5>
@@ -60,7 +56,6 @@
       <div class="w3-third w3-center w3-margin-bottom">
         <h3></h3>
         <h5 id="date2"></h5>
-        <img src="img_weather_clouds.jpg" alt="weather icon">
           <h5 id="temp2"></h5>
       <h5 id="humid2"></h5>
       <h5 id="wind2"></h5>
@@ -68,7 +63,6 @@
       <div class="w3-third w3-center w3-margin-bottom">
         <h3></h3>
         <h5 id="date3"></h5>
-        <img src="img_weather_clouds.jpg" alt="weather icon">
           <h5 id="temp3"></h5>
       <h5 id="humid3"></h5>
       <h5 id="wind3"></h5>
@@ -76,23 +70,17 @@
       <div class="w3-third w3-center w3-margin-bottom">
         <h3></h3>
         <h5 id="date4"></h5>
-        <img src="img_weather_clouds.jpg" alt="weather icon">
           <h5 id="temp4"></h5>
       <h5 id="humid4"></h5>
       <h5 id="wind4"></h5>
       </div>
     </div>
-    
   </div>
-    
-   
   </div>
   
-  
-
-
-  
-
 </body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="./script.js"></script>
 </html>
